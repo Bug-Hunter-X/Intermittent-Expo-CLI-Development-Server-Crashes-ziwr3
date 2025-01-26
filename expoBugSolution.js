@@ -1,0 +1,7 @@
+The exact cause of the Expo CLI development server crashes was difficult to pinpoint, as the issue seemed to stem from resource limitations or memory leaks.  Therefore, a multi-pronged approach was taken for a solution.
+
+1. **Check for Memory Leaks:** Examine the application's code for potential memory leaks. Use debugging tools to identify and resolve any memory-intensive operations or components that might contribute to the crashes.
+2. **Upgrade Expo CLI and Dependencies:** Ensure that the Expo CLI and all project dependencies are updated to their latest versions.  Outdated packages can sometimes have unresolved bugs that lead to instability.
+3. **Increase System Resources:** Allocate more RAM to the development environment.  If the machine is running low on memory, this could be contributing to the crashes.  Consider using a machine with more RAM or closing other memory-intensive applications while developing.
+4. **Try Different Development Server Options:**  Experiment with different development server configurations. For example, try running the Expo development server with the `--max-workers` or `--no-cache` option.  These options can sometimes address issues related to resource management and caching.
+5. **Restart the development server regularly:** Consider restarting the development server occasionally to refresh resources.
